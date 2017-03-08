@@ -1,5 +1,3 @@
-extern crate tokio_proto;
-
 mod server;
 mod parser;
 

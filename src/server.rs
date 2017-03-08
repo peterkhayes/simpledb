@@ -27,6 +27,7 @@ impl Codec for StatementCodec {
             // also remove the semicolon itself.
             buf.drain_to(1);
 
+
             match str::from_utf8(statement.as_slice()) {
                 Ok(s) => {
                     let result = s.trim();
